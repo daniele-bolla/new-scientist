@@ -1,0 +1,31 @@
+{
+  "name": "parcel-template",
+  "version": "1.0.0",
+  "description": "Tempalte with parcel, babel , prettier, vscode",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npm start",
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "lint": "eslint --fix . && echo 'Lint complete.'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniele-bolla/parcel-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daniele-bolla/parcel-template/issues"
+  },
+  "homepage": "https://github.com/daniele-bolla/parcel-template#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "parcel-bundler": "^1.12.3",
+    "prettier": "^1.18.2"
+  }
+}
