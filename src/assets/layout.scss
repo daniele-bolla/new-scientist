@@ -1,0 +1,19 @@
+@import "./variables.scss";
+
+body {
+  background-color: $body-bg;
+  color: $text-color;
+}
+
+.container {
+  max-width: 1200px;
+  width: 80vw;
+  margin:0 auto;
+  height: 100%;
+}
+
+.centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

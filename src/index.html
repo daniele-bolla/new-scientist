@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link rel="stylesheet" href="./style.scss">
-  <script type="text/javascript" src="main.js"></script>
+  <link rel="stylesheet" href="./assets/style.scss">
+  <script type="text/javascript" src="./js/main.js"></script>
   <title>New Scientist Front End Test</title>
 </head>
 
@@ -14,7 +14,29 @@
     <strong>We're sorry but New Scientist Front End Test doesn't work properly without JavaScript enabled. Please enable
       it to continue.</strong>
   </noscript>
-  <div class="card"></div>
+  <div class="container centered-content">
+    <div class="card">
+
+      <figure class="card__portrait">
+        <img class="card__portrait__image"
+          src="https://media3.s-nbcnews.com/j/newscms/2018_34/2537011/180820-protoplanetary-diskt-dh-1506_6f2f79256cc5906dc4ced53dbb4a4486.fit-760w.jpg"
+          alt="Cosmos Picture">
+      </figure>
+      <div class="card__body">
+        <h3 class="card__title">An introduction to the Biggest Mysteries of the Cosmos</h3>
+        <p class="card__description">This course introduces what we know about the universe, before exploring four key
+          mysteries that are the
+          focus of cutting-edge reserch in cosmology</p>
+        <button class="btn btn--primary btn--bold card__price">£149.00</button>
+
+      </div>
+      <div class="card__footer">
+
+        <h3 class="card__caption--number"><strong>52</strong></h3>
+        <p class="card__caption--text">Lessons</p>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

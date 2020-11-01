@@ -1,0 +1,44 @@
+@import "./variables.scss";
+
+.btn:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.btn:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+  pointer-events: all;
+}
+
+.btn {
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 2px solid transparent;
+  padding: 0.4rem 0.6rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  display: inline-flex;
+}
+
+
+.btn--primary {
+  color: $white;
+  background-color: $primary;
+  &:hover, &:active, &:focus{
+    background-color: darken($primary, 10%);
+  }
+}
+
+.btn--primary:disabled {
+  background-color: $white;
+  border-color: $primary;
+  color: $primary;
+}
+
+.btn--bold {
+  font-weight: $bold;
+}
