@@ -1,16 +1,5 @@
 @import "./variables.scss";
 
-.btn:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-}
-
-.btn:disabled {
-  opacity: 0.8;
-  cursor: not-allowed;
-  pointer-events: all;
-}
-
 .btn {
   cursor: pointer;
   text-align: center;
@@ -22,22 +11,35 @@
   font-size: 1rem;
   line-height: 1.5;
   display: inline-flex;
-}
 
-.btn--primary {
-  color: $white;
-  background-color: $primary;
-  &:hover, &:active, &:focus{
-    background-color: darken($primary, 10%);
+  &:focus {
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+  }
+
+  &:disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+    pointer-events: all;
+  }
+
+  &--primary {
+    color: $white;
+    background-color: $primary;
+
+    &:hover, &:active, &:focus{
+      background-color: darken($primary, 10%);
+    }
+
+    &:disabled {
+      background-color: $white;
+      border-color: $primary;
+      color: $primary;
+    }
+  }
+  
+  &--bold {
+    font-weight: $bold;
   }
 }
 
-.btn--primary:disabled {
-  background-color: $white;
-  border-color: $primary;
-  color: $primary;
-}
-
-.btn--bold {
-  font-weight: $bold;
-}
