@@ -1,4 +1,4 @@
-import { isPalindrome } from "./isPalindrome"
+import { isPalindrome } from './isPalindrome';
 describe('isPalindrome', () => {
   it('checks if a word is a palindrome', () => {
     expect(isPalindrome('kayak')).toBeTruthy();

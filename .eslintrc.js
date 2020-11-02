@@ -5,11 +5,12 @@ module.exports = {
   },
   extends: [
     "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "plugin:jest/recommended"
   ],
   parserOptions: {
-    ecmaVersion: 2020
+    ecmaVersion: 2020,
+    sourceType: "module"
   },
   rules: {
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",

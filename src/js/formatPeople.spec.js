@@ -1,20 +1,24 @@
-import { sortPeopleByNameAsc, sortPeopleByAgeDesc, getPeopleAges } from "./formatPeople"
+import {
+  sortPeopleByNameAsc,
+  sortPeopleByAgeDesc,
+  getPeopleAges
+} from './formatPeople';
 
 var people = [
   {
-    name: "Bob",
+    name: 'Bob',
     age: 29
   },
   {
-    name: "Jean",
+    name: 'Jean',
     age: 50
   },
   {
-    name: "Alice",
-    age: 42,
+    name: 'Alice',
+    age: 42
   },
   {
-    name: "Greg",
+    name: 'Greg',
     age: 23
   }
 ];
@@ -24,8 +28,8 @@ describe('formatPeople', () => {
     const sortedByName = sortPeopleByNameAsc(people);
     const { 0: first, length, [length - 1]: last } = sortedByName;
     expect(length).toBe(people.length);
-    expect(first.name).toBe("Alice");
-    expect(last.name).toBe("Jean");
+    expect(first.name).toBe('Alice');
+    expect(last.name).toBe('Jean');
   });
   it('sorts by age desc', () => {
     const sortedByName = sortPeopleByAgeDesc(people);
@@ -38,8 +42,6 @@ describe('formatPeople', () => {
     const expectedMapAges = [29, 50, 42, 23];
     const mapAges = getPeopleAges(people);
     expect(mapAges.length).toBe(people.length);
-    expect(mapAges).toEqual(
-      expect.arrayContaining(expectedMapAges)
-    );
+    expect(mapAges).toEqual(expect.arrayContaining(expectedMapAges));
   });
 });
