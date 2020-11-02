@@ -1,2 +1,16 @@
-# parcel-template
-Tempalte with parcel, babel , prettier, vscode
+# New Scientist Front End Test
+
+Dev
+```
+npm start 
+```
+
+Build
+```
+npm run build
+```
+
+Test
+```
+npm test
+```
