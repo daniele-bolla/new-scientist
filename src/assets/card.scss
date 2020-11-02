@@ -1,12 +1,11 @@
 @import "./variables.scss";
+
 .card {
   max-width: 380px;
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
 }
 
 .card__portrait {
-  max-height: 20rem;
+  max-height: 18rem;
 }
 
 .card__portrait__image{
@@ -15,44 +14,50 @@
 }
 
 .card__body {
-  background: rgb(255, 255, 255);
+  background: $white;
   padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
+  text-align: center;
 }
 
 .card__title {
   font-family: "Merriweather", serif;
   margin-top: 0.8rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.4rem;
   font-size: 1.4rem;
   font-weight: bold;
+  color: $heading-color;
 }
 
 .card__description {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.8;
 }
 
 .card__footer {
-  background: rgb(255, 255, 255);
-  color: black;
+  background: $white;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-top: 2px solid $body-bg;
+  border-top: 2px solid $border-color;
+  color: $text-color;
+  line-height: 1;
+  padding: 0.8rem 0;
 }
 
-.card__caption--number {
-  font-size:1.4rem;
-}
-
-.card__caption--text {
+.card__caption-number {
   font-size:1.2rem;
+  font-weight: bold;
+}
+
+.card__caption-text {
+  font-size:1rem;
 }
 
 .card__price {

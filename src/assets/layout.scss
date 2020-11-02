@@ -9,11 +9,14 @@ body {
   max-width: 1200px;
   width: 80vw;
   margin:0 auto;
-  height: 100%;
 }
 
 .centered-content {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.page {
+  padding: 2.4rem 1.6rem 2.8rem;
 }
